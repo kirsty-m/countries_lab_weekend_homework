@@ -7,7 +7,9 @@ const TotalPopulation = ({countries}) => {
 
 return (
     <>
-    <h4>This is the total world population: {worldTotal}</h4>
+    <h4>There are {worldTotal} humans on Earth.</h4> 
+    <p>Also there are a number of Aliens that reside on the planet.<br>
+    </br>(We just haven't counted them yet.)</p>
     </>
 )
 

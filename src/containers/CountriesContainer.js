@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react';
 import CountrySelector from '../components/CountrySelector';
 import Country from '../components/Country';
 import TotalPopulation from '../components/TotalPopulation';
+import './CountriesContainer.css';
+// import FavouriteCountries from '../components/FavouriteCountries'
 
 const CountriesContainer = () => {
 
@@ -30,10 +32,13 @@ const CountriesContainer = () => {
 
     return(
         <>
+        <div id='countries-container'>
             <h1>Here are my Countries:</h1>
             <CountrySelector countries={countries} onCountrySelected={handleCountrySelected}/>
             <Country country={selectedCountry}/>
             <TotalPopulation countries={countries} value={TotalPopulation}/>
+        </div>
+        
         </>
     )
 }

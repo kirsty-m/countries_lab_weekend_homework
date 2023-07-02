@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './CountrySelector.css'
 
 const CountrySelector = ({countries, onCountrySelected}) => {
 
@@ -9,8 +9,8 @@ const CountrySelector = ({countries, onCountrySelected}) => {
 
     return(
         <>
-        <select onChange={handleChange}>
-            <option>Choose Your Country</option>
+        <select onChange={handleChange} id='dropdown'>
+            <option>CHOOSE A COUNTRY</option>
             {countries.map(country => {
                 return (
                     <option key={country.cca3} value={country.cca3}>{country.name.common}</option>
