@@ -3,7 +3,8 @@ import CountrySelector from '../components/CountrySelector';
 import Country from '../components/Country';
 import TotalPopulation from '../components/TotalPopulation';
 import './CountriesContainer.css';
-// import FavouriteCountries from '../components/FavouriteCountries'
+// import FavouriteCountryList from '../components/FavouriteCountryList';
+
 
 const CountriesContainer = () => {
 
@@ -38,6 +39,11 @@ const CountriesContainer = () => {
             <Country country={selectedCountry}/>
             <TotalPopulation countries={countries} value={TotalPopulation}/>
         </div>
+        {/* <div id='fave-c0untries'>
+            <h1>Favourite Countries:</h1>
+            <FavouriteCountryList/>
+
+        </div> */}
         
         </>
     )
